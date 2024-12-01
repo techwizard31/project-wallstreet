@@ -7,7 +7,7 @@ function CountUp({ end }: { end: number }) {
 
   useEffect(() => {
     let current = 0;
-    const increment = Math.ceil(end / 50); // Increment value (duration split into 50 frames)
+    const increment = Math.ceil(end / 50); 
     const interval = setInterval(() => {
       current += increment;
       if (current >= end) {
@@ -16,7 +16,7 @@ function CountUp({ end }: { end: number }) {
       } else {
         setCount(current);
       }
-    }, 20); // 20ms for smooth animation
+    }, 30);
     return () => clearInterval(interval);
   }, [end]);
 
