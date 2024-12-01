@@ -1,5 +1,5 @@
 import React from 'react'
-import Loading from "./components/loadingComp";
+import Loading from "../components/loadingComp";
 function loading() {
   return (
     <div>
