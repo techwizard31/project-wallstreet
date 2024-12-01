@@ -20,7 +20,7 @@ function CountUp({ end }: { end: number }) {
     return () => clearInterval(interval);
   }, [end]);
 
-  return <span className="text-6xl">{count.toLocaleString()}</span>;
+  return <span className="text-xl md:text-4xl">{count.toLocaleString()}</span>;
 }
 
 function About() {
