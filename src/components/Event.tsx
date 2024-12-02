@@ -47,7 +47,7 @@ function Event() {
   }, []);
 
   return (
-    <section id="Events">
+    <section id="Events" className="pb-16">
       <div className="container mx-auto px-4">
         <h2 className="text-[#0064E0] text-6xl flex justify-center p-10">
           Events
