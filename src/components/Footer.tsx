@@ -1,7 +1,16 @@
-
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 function Footer() {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleMenuItemClick = (sectionId: string) => {
+    setIsMenuOpen(false);
+    const targetSection = document.getElementById(sectionId);
+    targetSection?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
     <div className="flex flex-col sm:flex-row h-auto bg-gradient-to-b from-black to-blue-600 text-white">
@@ -22,7 +31,7 @@ function Footer() {
         <div className="mt-6">
           <h1 className="font-bold text-xl sm:text-2xl mb-4 ">Contact us</h1>
           <p className="font-medium text-base sm:text-lg">
-            7990553041 <span className="ml-4 sm:text-sm">Arthur Murray</span>
+            7990553041 <span className="ml-4 ">Arthur Murray</span>
           </p>
           <p className="font-medium text-base sm:text-lg">
             7205131346 <span className="ml-4">Harley Joan</span>
@@ -38,10 +47,10 @@ function Footer() {
 
       {/* Navigation Section */}
        <div className="w-full sm:w-1/3 text-center mt-6 py-6 ">
-        <p className="text-base sm:text-lg font-bold mb-1">About us</p>
-        <p className="text-base sm:text-lg font-bold mb-1">Speaker</p>
-        <p className="text-base sm:text-lg font-bold mb-1">Sponsors</p>
-        <p className="text-base sm:text-lg font-bold">Our Partners</p>
+        <div className="text-base sm:text-lg font-bold mb-1"><a onClick={() => handleMenuItemClick("About")}>About us</a></div>
+        <div className="text-base sm:text-lg font-bold mb-1"><a onClick={() => handleMenuItemClick("Speaker")}>Speaker</a></div>
+        <div className="text-base sm:text-lg font-bold mb-1"><a onClick={() => handleMenuItemClick("Sponsors")}>Sponsors</a></div>
+        <div className="text-base sm:text-lg font-bold"><a onClick={() => handleMenuItemClick("Parteners")}>Our Partners</a></div>
       </div> 
       
       </div> 
