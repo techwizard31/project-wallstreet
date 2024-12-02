@@ -49,7 +49,7 @@ function Event() {
   return (
     <section id="Events" className="pb-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-[#0064E0] text-6xl flex justify-center p-10">
+        <h2 className="text-white text-6xl flex justify-center p-10">
           Events
         </h2>{" "}
          
@@ -57,12 +57,12 @@ function Event() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="relative bg-[#0064E0] rounded-lg shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[18rem]"
+              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[20rem]"
             >
               {/* Title and Description */}
-              <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#0064E0] group-hover:to-[#000000] p-6 transition-all duration-500 ease-in-out">
+              <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-transparent  group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
                 {/* Title */}
-                <h3 className="text-white text-2xl font-bold group-hover:translate-y-[-20px] transition-transform duration-300 ease-in-out">
+                <h3 className="text-white text-2xl font-bold group-hover:translate-y-[-20px] transition-transform duration-300 ease-in-out group-hover:text-[#0064E0] ">
                   {event.title}
                 </h3>
 
