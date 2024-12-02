@@ -58,7 +58,7 @@ function Event() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[22rem] cursor-pointer"
+              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[28rem] cursor-pointer"
             >
               {/* Image, Title, and Description */}
               <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
@@ -77,7 +77,7 @@ function Event() {
                 </h3>
 
                 {/* Description */}
-                <p className="absolute top-28 left-4 px-4 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
+                <p className="absolute top-28 text-2xl left-4 px-4 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
                   {event.description}
                 </p>
               </div>
