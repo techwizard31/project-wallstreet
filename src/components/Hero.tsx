@@ -176,7 +176,6 @@ function Hero() {
           backgroundPosition: "center",
         }}
       >
-
         <div className="text-center z-10">
           <h1 className="text-6xl md:text-8xl ">
             <p className="text-[#0064E0] italic font-bold">E-CELL</p>
