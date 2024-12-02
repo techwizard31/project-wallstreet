@@ -58,6 +58,7 @@ function Event() {
           {events.map((event, index) => (
             <div
               key={index}
+
               className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[28rem] cursor-pointer"
             >
               {/* Image, Title, and Description */}
