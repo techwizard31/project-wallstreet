@@ -7,8 +7,10 @@ function Hero() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleMenuItemClick = () => {
+  const handleMenuItemClick = (sectionId: string) => {
     setIsMenuOpen(false);
+    const targetSection = document.getElementById(sectionId);
+    targetSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -35,7 +37,7 @@ function Hero() {
     <section>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 z-50 w-full bg-black  backdrop-blur-md bg-transparent text-white transition-transform duration-300 ${
+        className={`fixed top-0 left-0 z-50 w-full bg-black backdrop-blur-md bg-transparent text-white transition-transform duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
@@ -51,32 +53,32 @@ function Hero() {
           {/* Navbar Links for Desktop */}
           <div className="hidden md:flex md:items-center md:gap-4 font-bold">
             <a
-              href="#About"
-              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0]"
+              onClick={() => handleMenuItemClick("About")}
+              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0] cursor-pointer"
             >
               ABOUT
             </a>
             <a
-              href="#Events"
-              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0]"
+              onClick={() => handleMenuItemClick("Events")}
+              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0] cursor-pointer"
             >
               EVENTS
             </a>
             <a
-              href="#Speakers"
-              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0]"
+              onClick={() => handleMenuItemClick("Speakers")}
+              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0] cursor-pointer"
             >
               SPEAKERS
             </a>
             <a
-              href="#Team"
-              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0]"
+              onClick={() => handleMenuItemClick("Team")}
+              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0] cursor-pointer"
             >
               OUR TEAM
             </a>
             <a
-              href="#Contact"
-              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0]"
+              onClick={() => handleMenuItemClick("Contact")}
+              className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 md:mt-0 hover:text-[#0064E0] cursor-pointer"
             >
               CONTACT
             </a>
@@ -122,45 +124,40 @@ function Hero() {
           <ul className="flex flex-col items-center gap-4 font-bold mt-10">
             <li>
               <a
-                href="#About"
-                onClick={handleMenuItemClick}
-                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0]"
+                onClick={() => handleMenuItemClick("About")}
+                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0] cursor-pointer"
               >
                 ABOUT
               </a>
             </li>
             <li>
               <a
-                href="#Events"
-                onClick={handleMenuItemClick}
-                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0]"
+                onClick={() => handleMenuItemClick("Events")}
+                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0] cursor-pointer"
               >
                 EVENTS
               </a>
             </li>
             <li>
               <a
-                href="#Speakers"
-                onClick={handleMenuItemClick}
-                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0]"
+                onClick={() => handleMenuItemClick("Speakers")}
+                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0] cursor-pointer"
               >
                 SPEAKERS
               </a>
             </li>
             <li>
               <a
-                href="#Team"
-                onClick={handleMenuItemClick}
-                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0]"
+                onClick={() => handleMenuItemClick("Team")}
+                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0] cursor-pointer"
               >
                 OUR TEAM
               </a>
             </li>
             <li>
               <a
-                href="#Contact"
-                onClick={handleMenuItemClick}
-                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0]"
+                onClick={() => handleMenuItemClick("Contact")}
+                className="block px-4 py-2 mt-2 text-sm text-white transition duration-300 hover:text-[#0064E0] cursor-pointer"
               >
                 CONTACT
               </a>

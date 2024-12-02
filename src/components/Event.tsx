@@ -58,7 +58,7 @@ function Event() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[22rem] cursor-pointer"
+              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out  h-[22rem] cursor-pointer"
             >
               {/* Image, Title, and Description */}
               <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
