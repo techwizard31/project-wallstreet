@@ -46,8 +46,7 @@ function Footer() {
       
       </div> 
      <div className="bg-black h-6 w-full text-center">
-      Made By
-     With love webwiz
+     Made with 🩵 by WEBWIZ
    </div>
       
    </>
