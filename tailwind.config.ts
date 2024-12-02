@@ -13,6 +13,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        poppins : ['Poppins', 'sans-serif'],
+      },
+      animation: {
+                        'infinite-scroll': 'infinite-scroll 35s linear infinite',
+                        'infinite-scroll-rtl': 'infinite-scroll-rtl 35s linear infinite',
+      },
+      keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0%)' },
+                            to: { transform: 'translateX(-100%)' },
+                        },
+                        'infinite-scroll-rtl': { // New keyframes for right-to-left
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0%)' },
+                    }     },
     },
   },
   plugins: [],
