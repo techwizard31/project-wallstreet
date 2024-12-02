@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 interface Event {
@@ -49,7 +50,7 @@ function Event() {
   return (
     <section id="Events" className="pb-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-[#0064E0] text-6xl flex justify-center p-10">
+        <h2 className="text-white text-6xl flex justify-center p-10 ">
           Events
         </h2>{" "}
          
@@ -57,17 +58,26 @@ function Event() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="relative bg-[#0064E0] rounded-lg shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[18rem]"
+              className="relative bg-[#0064E0] rounded-sm shadow-md overflow-hidden group transition-all duration-500 ease-in-out transform hover:scale-105 h-[22rem] cursor-pointer"
             >
-              {/* Title and Description */}
-              <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#0064E0] group-hover:to-[#000000] p-6 transition-all duration-500 ease-in-out">
+              {/* Image, Title, and Description */}
+              <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
+                {/* Image */}
+                <Image
+                  src="/Nav_Assests/image1-removebg.png"
+                  alt="logo"
+                  width={75}
+                  height={75}
+                  className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+                />
+
                 {/* Title */}
-                <h3 className="text-white text-2xl font-bold group-hover:translate-y-[-20px] transition-transform duration-300 ease-in-out">
+                <h3 className="absolute px-4 text-white font-bold transition-transform duration-500 ease-in-out group-hover:text-[#0068e0] text-3xl group-hover:self-start pt-[8rem] group-hover:pt-0 self-center group-hover:top-28 group-hover:left-10 transform group-hover:translate-x-[-2rem] group-hover:translate-y-[-2rem]">
                   {event.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
+                <p className="absolute top-28 left-4 px-4 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
                   {event.description}
                 </p>
               </div>
