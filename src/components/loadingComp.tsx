@@ -20,9 +20,9 @@ export default function Loading() {
       <Image
         src="https://res.cloudinary.com/dnw1mcx2h/image/upload/v1733032954/zmxrya6bgxdiw7brhk59.png"
         alt="entrepreneurship"
-        width={200}
-        height={200}
-        className="mx-auto"
+        width={20}
+        height={20}
+        className=""
       />
       <span className="text-black text-6xl ml-4">{texts[textIndex]}</span>
     </div>
