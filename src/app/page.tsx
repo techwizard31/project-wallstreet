@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import About from "../components/About";
 import Event from "../components/Event";
+import Footer from "../components/Footer";
 import Loading from "./loading";
 import Hero from "@/components/Hero";
 
@@ -26,8 +27,9 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <About />
-      <Event />
+        <About/>
+        <Event/>
+        <Footer/>
     </>
   );
 }
