@@ -11,7 +11,7 @@ export default function Loading() {
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 800);
+    }, 300);
     return () => clearInterval(interval); 
   }, []);
 
