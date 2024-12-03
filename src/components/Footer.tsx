@@ -50,7 +50,7 @@ function Footer() {
             <a onClick={() => handleMenuItemClick("About")}>About us</a>
           </div>
           <div className="text-base sm:text-lg font-bold mb-1">
-            <a onClick={() => handleMenuItemClick("Speaker")}>Speaker</a>
+            <a onClick={() => handleMenuItemClick("Speakers")}>Speaker</a>
           </div>
           <div className="text-base sm:text-lg font-bold mb-1">
             <a onClick={() => handleMenuItemClick("Sponsors")}>Sponsors</a>

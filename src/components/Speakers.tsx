@@ -74,7 +74,7 @@ export default function SpeakerCarousel() {
   }, [emblaApi])
 
   return (
-  <main className='px-5 lg:px-28 mx-auto'>
+  <div id='Speakers' className='px-5 lg:px-28 mx-auto'>
   <div className=" w-full min-h-screen bg-black relative">
   <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] max-w-4xl w-full p-4">
     <div className="overflow-hidden" ref={emblaRef}>
@@ -123,6 +123,6 @@ export default function SpeakerCarousel() {
     </button>
   </div>
 </div>
-</main>
+</div>
   )
 }

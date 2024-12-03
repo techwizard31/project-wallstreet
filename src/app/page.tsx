@@ -6,15 +6,16 @@ import Event from "../components/Event";
 import Footer from "../components/Footer";
 import Loading from "./loading";
 import Hero from "@/components/Hero";
-
-
+import Team from "@/components/Team";
+import SpeakerCarousel from "@/components/Speakers";
+import Sponsors from "@/components/Sponsors";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 800);
 
     // Cleanup the timer
     return () => clearTimeout(timer);
@@ -29,6 +30,9 @@ export default function Home() {
       <Hero/>
         <About/>
         <Event/>
+        <SpeakerCarousel/>
+        <Sponsors/>
+        <Team/>
         <Footer/>
     </>
   );

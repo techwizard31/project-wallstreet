@@ -4,7 +4,7 @@ import { OurTeam } from '../Data/TeamData'
 
 function Team() {
   return (
-    <div>
+    <div id='Team'>
        <div className="flex flex-col justify-center items-center mt-8 font-poppins">
             <div className="container max-w-7xl justify-center items-center px-4">
 
