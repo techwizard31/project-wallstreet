@@ -15,50 +15,50 @@ const speakers: Speaker[] = [
   {
     name: "Speaker",
     title: "V. Krishnan",
-    image: "images/assets/Card vk.png",
-    image2: "images/assets/v krishnan.png"
+    image: "/Speaker_Assets/Card vk.png",
+    image2: "/Speaker_Assets/v krishnan.png"
   },
   {
     name: "Speaker",
     title: "Ravi Ranjan",
-    image: "images/assets/Card ravi.png",
-    image2: "images/assets/ravi.png"
+    image: "/Speaker_Assets/Card ravi.png",
+    image2: "/Speaker_Assets/ravi.png"
   },
   {
     name: "Speaker",
     title: "Mukesh Malik",
-    image: "images/assets/Card mukesh.png",
-    image2: "images/assets/mukesh.png" 
+    image: "/Speaker_Assets/Card mukesh.png",
+    image2: "/Speaker_Assets/mukesh.png" 
   },
   {
     name: "Speaker",
     title: "Rishi Singh",
-    image: "images/assets/Card rishi.png",
-    image2: "images/assets/rishi.png"  
+    image: "/Speaker_Assets/Card rishi.png",
+    image2: "/Speaker_Assets/rishi.png"  
   },
   {
     name: "Speaker",
     title: "Ishaan Sharma",
-    image: "images/assets/Card ishaan.png",
-    image2: "images/assets/ishaan.png" 
+    image: "/Speaker_Assets/Card ishaan.png",
+    image2: "/Speaker_Assets/ishaan.png" 
   },
   {
     name: "Speaker",
     title: "Bibin Babu",
-    image: "images/assets/Card bibin.png",
-    image2: "images/assets/bibin.png"
+    image: "/Speaker_Assets/Card bibin.png",
+    image2: "/Speaker_Assets/bibin.png"
   },
   {
     name: "Speaker",
     title: "Arjun Malhotra",
-    image: "images/assets/Card malhotra.png",
-    image2: "images/assets/malhotra.png"
+    image: "/Speaker_Assets/Card malhotra.png",
+    image2: "/Speaker_Assets/malhotra.png"
   },
   {
     name: "Speaker",
     title: "AK Mohanty",
-    image: "images/assets/Card ak.png",
-    image2: "images/assets/ak.png"
+    image: "/Speaker_Assets/Card ak.png",
+    image2: "/Speaker_Assets/ak.png"
   }
 ]
 
