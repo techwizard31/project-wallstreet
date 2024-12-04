@@ -19,7 +19,7 @@ export const OurTeam = [{
 {
     id: 4,
     name:"Alliena Sar",
-    title:"Cretive Head",
+    title:"Creative Head",
     imageUrl:"https://res.cloudinary.com/dlp0vynmo/image/upload/v1733153135/ujbe0uudz3gdtiotzzvl.png"
 },
 {
