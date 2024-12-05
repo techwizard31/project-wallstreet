@@ -63,7 +63,7 @@ function Event() {
           <div className="coverpage h-full group-hover:mt-20 max-sm:group-hover:ml-[7%] max-lg:group-hover:-ml-[20%] xl:group-hover:-ml-44 flex flex-row justify-center items-center gap-5">
             <h3 className="text-white font-bold transition-transform duration-500 ease-in-out group-hover:text-[#0064E0] text-3xl
             group-hover:self-start pt-[rem] group-hover:pt-0 self-center group-hover:top-
-            group-hover:left- transform group-hover:translate-x-[-2rem] group-hover:translate-y-[-2rem]">
+            group-hover:left- transform group-hover:translate-x-[-0.5rem] group-hover:translate-y-[-2rem]">
               {event.title}
             </h3>
             <button
