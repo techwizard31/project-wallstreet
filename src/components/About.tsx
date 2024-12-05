@@ -37,9 +37,10 @@ function About() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTriggerCount(true); // Trigger animation
-          } else {
-            setTriggerCount(false); // Reset to ensure re-trigger
-          }
+          } 
+          // else {
+          //   setTriggerCount(false); // Reset to ensure re-trigger
+          // }
         });
       },
       { threshold: 0.5 } // Trigger when 50% of the component is visible
