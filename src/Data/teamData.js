@@ -50,7 +50,7 @@ export const OurTeam = [{
 {
     id: 8,
     name:"Anmol Agrawal",
-    title:"Teachnical Head",
+    title:"Technical Head",
     imageUrl:"https://res.cloudinary.com/dlp0vynmo/image/upload/v1733153746/sh8oqocje3xvqn7rkvss.png",
     linkedin:'https://www.linkedin.com/in/anmol-agrawal-026280259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
 },
