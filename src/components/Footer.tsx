@@ -30,17 +30,17 @@ function Footer() {
             <h1 className="font-bold text-xl sm:text-2xl mb-4">Contact us</h1>
             <div className="numbers">
             <p className="font-medium text-base sm:text-lg">
-              7990553041 &nbsp; Arthur Murray
+              8092336833 &nbsp; Amarpreet Singh
             </p>
             <p className="font-medium text-base sm:text-lg">
-              7205131346 &nbsp; Harley Joan
+              7499156661 &nbsp; Aditya Chauhan
             </p>
             </div>
             <a
               href="mailto:nitrkl.ecell@gmail.com"
               className="font-medium text-base sm:text-lg underline block mt-4"
             >
-              nitrkl.ecell@gmail.com
+            work@ecellnitrkl.in
             </a>
           </div>
         </div>
@@ -69,17 +69,17 @@ function Footer() {
                 <h1 className="font-bold text-lg sm:text-2xl mb-4">Contact us</h1>
                 <div className="numbers">
                 <p className="font-medium text-sm sm:text-lg">
-                  7990553041 &nbsp; Arthur Murray
+                  8092336833 &nbsp; Amarpreet Singh
                 </p>
                 <p className="font-medium text-sm sm:text-lg">
-                  7205131346 &nbsp; Harley Joan
+                  7499156661 &nbsp; Aditya Chauhan
                 </p>
                 </div>
                 <a
                   href="mailto:nitrkl.ecell@gmail.com"
                   className="font-medium text-sm sm:text-lg underline block mt-4"
                 >
-                  nitrkl.ecell@gmail.com
+                  work@ecellnitrkl.in
                 </a>
               </div>
           </div>
