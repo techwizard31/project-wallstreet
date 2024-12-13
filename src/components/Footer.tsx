@@ -63,9 +63,9 @@ function Footer() {
           </div>
         </div>
         {/* Mobile Menu Icon */}
-        <div className="mobilefooter flex sm:hidden justify-between items-center pl-3">
-          <div className="w-1/2 sm:w-1/3 py-3">
-              <div className="mt-6 flex flex-col items-center">
+        <div className="mobilefooter flex sm:hidden justify-between items-center">
+          <div className="w-2/3 sm:w-1/3 py-3">
+              <div className="sm:mt-6 flex flex-col items-center">
                 <h1 className="font-bold text-lg sm:text-2xl mb-4">Contact us</h1>
                 <div className="numbers">
                 <p className="font-medium text-sm sm:text-lg">
@@ -83,7 +83,7 @@ function Footer() {
                 </a>
               </div>
           </div>
-          <div className="w-1/2 sm:w-1/3 text-center py-6 mt-6 ">
+          <div className="w-1/3 sm:w-1/3 text-center py-6 sm:mt-6">
             <div className="text-base sm:text-lg font-bold mb-1 cursor-pointer">
               <a onClick={() => handleMenuItemClick("About")}>About us</a>
             </div>
