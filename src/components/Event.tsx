@@ -11,7 +11,7 @@ const eventsData: Event[] = [
   {
     title: "National Entrepreneurship Summit 2025",
     description:
-      "The flagship event of E-Cell NIT Rourkela, NES 2025, is a three-day extravaganza connecting startups, students, entrepreneurs, and investors. With engaging workshops, panel discussions, and networking opportunities, NES fosters innovation and drives entrepreneurial growth on a national scale."
+      "The flagship event of E-Cell NIT Rourkela, NES 2025, is a three-day extravaganza connecting startups, students, entrepreneurs, and investors. With engaging workshops, panel discussions, and networking opportunities, NES fosters innovation and drives entrepreneurial growth on a national scale.",
   },
   {
     title: "Podcast Series: What The Idea",
@@ -21,7 +21,7 @@ const eventsData: Event[] = [
   {
     title: "Startup 101: Entrepreneurship Classes",
     description:
-      "Startup 101 is a comprehensive initiative aimed at guiding aspiring entrepreneurs through the fundamentals of building a successful venture. From idea validation to fundraising, these classes equip participants with practical knowledge and skills to navigate the startup ecosystem."
+      "Startup 101 is a comprehensive initiative aimed at guiding aspiring entrepreneurs through the fundamentals of building a successful venture. From idea validation to fundraising, these classes equip participants with practical knowledge and skills to navigate the startup ecosystem.",
   },
 ];
 
@@ -63,8 +63,15 @@ function Event() {
               </div>
 
               {/* Initially Centered Title */}
-              <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:text-2xl transition-opacity duration-500 group-hover:opacity-0 px-4 text-center">
+              <div className="absolute inset-0 flex  items-center justify-center text-white font-bold text-xl md:text-2xl transition-opacity duration-500 group-hover:opacity-0 px-4 text-center">
                 {event.title}
+                <Image
+                  src="/Hero_Assests/guidance_up-arrow-removebg-preview.png"
+                  alt="arrow"
+                  width={50}
+                  height={50}
+                  className="w-8 h-8 opacity-100 group-hover:opacity-0 transition-opacity duration-500 transform rotate-[-90deg] "
+                />
               </div>
 
               {/* Glow Effect */}
