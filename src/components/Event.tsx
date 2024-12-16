@@ -37,46 +37,56 @@ function Event() {
       <div className="container mx-auto px-4">
         <h2 className="text-white text-4xl md:text-6xl flex justify-center p-10 font-bold">
           Events
-        </h2>
 
-        <div className="flex flex-col justify-center items-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto px-4 ">
+       
+
+        </h2>{" "}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full gap-8 mx-10">
           {events.map((event, index) => (
-            <div
-              key={index}
-              className="relative bg-[#0064E0] rounded-lg shadow-md group overflow-hidden w-[18rem] md:w-auto h-[24rem] cursor-pointer transition-all duration-500 ease-in-out "
-            >
-              {/* Hover Overlay */}
-              <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-start p-6 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500 ease-in-out">
-                <Image
-                  src="/Nav_Assests/image1-removebg.png"
-                  alt={event.title}
-                  width={50}
-                  height={50}
-                  className="w-12 h-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500  ml-[-0.5rem] "
-                />
-                <h3 className=" text-[#0064E0] font-bold text-lg md:text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  {event.title}
-                </h3>
-                <p className="mt-2 text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  {event.description}
-                </p>
-              </div>
+        <div
+        key={index}
+        className="relative bg-[#0064E0] rounded-sm shadow-md overflow-y-auto group transition-all duration-500 ease-in-out  h-[22rem] cursor-pointer scrollbar-thin scrollbar-thumb-[#0068e0] scrollbar-track-gray-200"
+      >
+         {/* Image, Title, and Description */}
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
+           {/* Image */}
+          <Image
+            src="/Nav_Assests/image1-removebg.png"
+            alt="logo"
+            width={75}
+            height={75}
+            className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          />
+           {/* Title */}
+          <div className="coverpage h-full group-hover:mt-20 max-sm:group-hover:ml-[7%] max-lg:group-hover:-ml-[20%] xl:group-hover:-ml-44 flex flex-row justify-center items-center gap-5">
+            <h3 className="text-white font-bold transition-transform duration-500 ease-in-out group-hover:text-[#0064E0] text-3xl
+            group-hover:self-start pt-[rem] group-hover:pt-0 self-center group-hover:top-
+            group-hover:left- transform group-hover:translate-x-[-0.5rem] group-hover:translate-y-[-2rem]">
+              {event.title}
+            </h3>
+            <button
+              className="transition-transform duration-300 ease-in-out animate-horizontal-bounce group-hover:hidden"
+              >
+              <Image
+                src="/Hero_Assests/guidance_up-arrow-removebg-preview.png"
+                alt="arrow"
+                width={40}
+                height={40}
+                className="-rotate-90"
+              />
+            </button>
 
-              {/* Initially Centered Title */}
-              <div className="absolute inset-0 flex  items-center justify-center text-white font-bold text-xl md:text-2xl transition-opacity duration-500 group-hover:opacity-0 px-4 text-center">
-                {event.title}
-                <Image
-                  src="/Hero_Assests/guidance_up-arrow-removebg-preview.png"
-                  alt="arrow"
-                  width={50}
-                  height={50}
-                  className="w-8 h-8 opacity-100 group-hover:opacity-0 transition-opacity duration-500 transform rotate-[-90deg] "
-                />
-              </div>
+          </div>
+           {/* Description */}
+          <p className="absolute top-28 left-4 px-4 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
+            {event.description}
+          </p>
+        </div>
+         {/* Hover Effects - Border and Glow */}
+        <div className="absolute inset-0 border border-transparent group-hover:border-white rounded-lg transition-all duration-500 ease-in-out"></div>
+      </div>
 
-              {/* Glow Effect */}
-              <div className="absolute inset-0 border border-transparent group-hover:border-white rounded-lg transition-all duration-500"></div>
-            </div>
           ))}
         </div>
       </div>

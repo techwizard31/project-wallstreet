@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export default function Loading() {
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ["Dream.", "Build.", "Launch."];
+  const texts = ["Dream", "Build", "Launch"];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 800);
+    }, 200);
     return () => clearInterval(interval); 
   }, []);
 

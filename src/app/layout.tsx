@@ -20,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"></link></head>
       <body className={ `${poppins.variable}`}>{children}</body>
     </html>
   );
