@@ -112,7 +112,7 @@ export default function SpeakerCarousel() {
   }, [emblaApi])
 
   return (
-  <div id='Speakers' className='px-5 pt-10'>
+  <div id='Speakers' className='px-5 pt-10 bg-black'>
   <div className=" w-full min-h-screen bg-black relative">
     <h1 className='flex justify-center items-center'>
       <span className="text-[#0064E0] text-5xl font-bold text-center ">SPEAKERS &amp; INVESTORS</span>
