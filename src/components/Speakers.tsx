@@ -115,7 +115,7 @@ export default function SpeakerCarousel() {
   <div id='Speakers' className='px-5 pt-10'>
   <div className=" w-full min-h-screen bg-black relative">
     <h1 className='flex justify-center items-center'>
-      <span className="text-[#0064E0] text-5xl font-bold">Speakers &amp; Investors</span>
+      <span className="text-[#0064E0] text-5xl font-bold text-center ">SPEAKERS &amp; INVESTORS</span>
     </h1>
     <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] lg:max-w-6xl max-w-4xl w-full p-4">
     <div className="overflow-hidden" ref={emblaRef}>
