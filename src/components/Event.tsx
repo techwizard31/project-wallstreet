@@ -36,50 +36,34 @@ function Event() {
     <section id="Events" className="pb-16 bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-white text-4xl md:text-6xl flex justify-center p-10 font-bold">
-          Events
-
-       
-
+          EVENTS
         </h2>{" "}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full gap-8 mx-10">
           {events.map((event, index) => (
         <div
         key={index}
-        className="relative bg-[#0064E0] rounded-sm shadow-md overflow-y-auto group transition-all duration-500 ease-in-out  h-[22rem] cursor-pointer scrollbar-thin scrollbar-thumb-[#0068e0] scrollbar-track-gray-200"
+        className="relative bg-[#0064E0] rounded-sm shadow-md overflow-y-hidden group transition-all duration-500 ease-in-out h-[26rem] xl:h-[22rem] md:h-[25rem] cursor-pointer scrollbar-thin scrollbar-thumb-[#0068e0] scrollbar-track-gray-200"
       >
          {/* Image, Title, and Description */}
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-6 transition-all duration-500 ease-in-out">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col bg-transparent group-hover:bg-[#000000] p-4 transition-all duration-500 ease-in-out">
            {/* Image */}
           <Image
             src="/Nav_Assests/image1-removebg.png"
             alt="logo"
             width={75}
             height={75}
-            className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="absolute top- left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
           />
            {/* Title */}
-          <div className="coverpage h-full group-hover:mt-20 max-sm:group-hover:ml-[7%] max-lg:group-hover:-ml-[20%] xl:group-hover:-ml-44 flex flex-row justify-center items-center gap-5">
-            <h3 className="text-white font-bold transition-transform duration-500 ease-in-out group-hover:text-[#0064E0] text-3xl
-            group-hover:self-start pt-[rem] group-hover:pt-0 self-center group-hover:top-
-            group-hover:left- transform group-hover:translate-x-[-0.5rem] group-hover:translate-y-[-2rem]">
+          <div className="coverpage h-full flex flex-row justify-center items-center gap-5">
+            <h3 className="text-white font-bold transition-transform duration-500 ease-in-out group-hover:mb-32 px-2
+            group-hover:text-[#0064E0] text-xl xl:text-3xl xl:group-hover:mb-0 self-center transform group-hover:translate-x-[-0.5rem] group-hover:translate-y-[-2rem]">
               {event.title}
             </h3>
-            <button
-              className="transition-transform duration-300 ease-in-out animate-horizontal-bounce group-hover:hidden"
-              >
-              <Image
-                src="/Hero_Assests/guidance_up-arrow-removebg-preview.png"
-                alt="arrow"
-                width={40}
-                height={40}
-                className="-rotate-90"
-              />
-            </button>
-
           </div>
            {/* Description */}
-          <p className="absolute top-28 left-4 px-4 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out mt-4">
+          <p className="absolute bottom-0 pb-6 text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out lg:pr-2">
             {event.description}
           </p>
         </div>
