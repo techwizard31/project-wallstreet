@@ -5,30 +5,26 @@ import React, { useEffect, useState } from "react";
 interface Event {
   title: string;
   description: string;
-  image: string;
 }
 
 const eventsData: Event[] = [
   {
-    title: "E-Summit",
+    title: "National Entrepreneurship Summit 2025",
     description:
-      "Annually, Team E-Cell MANIT sets the stage on fire with E-Summit, its flagship event, a blazing beacon for enthusiastic students and entrepreneurs.",
-    image: "/images/event2.jpg",
+      "The flagship event of E-Cell NIT Rourkela, NES 2025, is a three-day extravaganza connecting startups, students, entrepreneurs, and investors. With engaging workshops, panel discussions, and networking opportunities, NES fosters innovation and drives entrepreneurial growth on a national scale.",
   },
   {
-    title: "E-Carnival",
+    title: "Podcast Series: What The Idea",
     description:
-      "Annually, Team E-Cell MANIT sets the stage on fire with E-Summit, its flagship event, a blazing beacon for enthusiastic students and entrepreneurs.",
-    image: "/images/event2.jpg",
+      '"What The Idea" is an inspiring podcast series by E-Cell NIT Rourkela that dives into the minds of successful entrepreneurs and industry leaders. Each episode uncovers unique stories, challenges, and innovative solutions that can spark your next big idea.',
   },
   {
-    title: "Pe-Charcha",
+    title: "Startup 101: Entrepreneurship Classes",
     description:
-      "Annually, Team E-Cell MANIT sets the stage on fire with E-Summit, its flagship event, a blazing beacon for enthusiastic students and entrepreneurs.",
-    image: "/images/event3.jpg",
+      "Startup 101 is a comprehensive initiative aimed at guiding aspiring entrepreneurs through the fundamentals of building a successful venture. From idea validation to fundraising, these classes equip participants with practical knowledge and skills to navigate the startup ecosystem.",
   },
- 
 ];
+
 function Event() {
   const [events, setEvents] = useState<Event[]>([]);
 
@@ -39,8 +35,11 @@ function Event() {
   return (
     <section id="Events" className="pb-16 bg-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-6xl flex justify-center p-10 font-semibold ">
+        <h2 className="text-white text-4xl md:text-6xl flex justify-center p-10 font-bold">
           Events
+
+       
+
         </h2>{" "}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full gap-8 mx-10">
@@ -87,6 +86,7 @@ function Event() {
          {/* Hover Effects - Border and Glow */}
         <div className="absolute inset-0 border border-transparent group-hover:border-white rounded-lg transition-all duration-500 ease-in-out"></div>
       </div>
+
           ))}
         </div>
       </div>
