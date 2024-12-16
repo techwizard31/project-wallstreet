@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { sponsorData } from '../Data/SponsorData'
 function Sponsors() {
   return (
-    <div className='pb-[4rem]' id='Sponsors'>
+    <div className='pb-[4rem] bg-black' id='Sponsors'>
 
 
   <div className="relative font-inter antialiased">
